@@ -1,6 +1,5 @@
 .nav-main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   background: #f6faff;
   padding: 2.4rem 2rem;
   align-items: center;
@@ -17,7 +16,12 @@
   color: #090628;
 }
 
+.nav-first {
+  place-self: start;
+}
+
 .setting-ico {
+  margin-top: auto;
   display: flex;
   align-items: end;
   flex-grow: 1;
