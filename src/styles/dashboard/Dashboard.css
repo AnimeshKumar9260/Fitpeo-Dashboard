@@ -22,7 +22,6 @@
 
 .fig-container {
   position: relative;
-  overflow: hidden;
   grid-row: span 3;
   background-color: #f6faff;
   border-radius: 24px;
@@ -44,6 +43,22 @@
   max-height: 360px;
   object-fit: contain;
   object-position: center;
+}
+
+.slider {
+  width: 100%;
+}
+
+.tooltip-1 {
+  position: absolute;
+  top: 23%;
+  right: -15%;
+}
+
+.tooltip-2 {
+  position: absolute;
+  bottom: 36%;
+  left: -6%;
 }
 
 .alt-div {

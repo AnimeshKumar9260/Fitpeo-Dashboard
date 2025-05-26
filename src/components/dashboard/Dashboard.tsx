@@ -10,6 +10,7 @@ import { dashboardData } from "../../data/dashboardData";
 import rarr from "../../assets/dashboard/rarr.svg";
 import Activity from "./Activity";
 import zoom from "../../assets/dashboard/zoom.svg";
+import ToolTip from "./ToolTip";
 
 export default function Dashboard() {
   return (
@@ -26,8 +27,19 @@ export default function Dashboard() {
         {/* Left grid item */}
         <div className="fig-container">
           <img src={fig} alt="anatomy fig" className="fig" />
-          <img src={slider} alt="slider" />
-          <img className="zoom-ico" src={zoom} alt="zoom"></img>
+          <img src={slider} alt="slider" className="slider" />
+          <img className="zoom-ico" src={zoom} alt="zoom" />
+          <div className="tooltip-1">
+            <ToolTip emoji="❤️" text="Healthy Heart" bg="#3633B3" />
+          </div>
+          <div className="tooltip-2">
+            <ToolTip
+              reverse={true}
+              emoji="🦵🏻"
+              text="Healthy Leg"
+              bg="#03E0F0"
+            />
+          </div>
         </div>
         {/* Right grid items */}
         {dashboardData.map((item, index) => (

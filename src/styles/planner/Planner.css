@@ -1,0 +1,20 @@
+.planner-main {
+  background: #f6faff;
+  padding: 2.4rem 2rem;
+}
+
+.planner-header {
+  display: flex;
+  justify-content: end;
+}
+
+.mid-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  height: 28px;
+  width: 28px;
+}
