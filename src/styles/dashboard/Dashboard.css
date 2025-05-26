@@ -1,0 +1,133 @@
+/* ///////////////////////// Main dashboard ///////////////////////// */
+
+.dashboard-main {
+  background-color: white;
+  padding: 3.4rem 2rem;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 0 1.2rem;
+  row-gap: 1rem;
+  column-gap: 4rem;
+}
+
+.fig-container {
+  position: relative;
+  overflow: hidden;
+  grid-row: span 3;
+  background-color: #f6faff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 0.5rem;
+}
+
+.zoom-ico {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0.5;
+}
+
+.fig {
+  max-height: 360px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.alt-div {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.8rem;
+}
+
+/* ///////////////////////// Search Box ///////////////////////// */
+
+.search-box {
+  border-radius: 14px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.search-ico {
+  height: 20px;
+  width: 20px;
+}
+
+.search-input {
+  border: none;
+  flex-grow: 1;
+  font-size: 0.9rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* ///////////////////////// Activity board ///////////////////////// */
+
+.activity-main {
+  margin: 1.8rem 0;
+}
+
+.activity-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actvity-sub-head {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(188, 188, 188);
+}
+
+.graph-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+/* ///////////////////////// Stat box ///////////////////////// */
+
+.emoji {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.emoji-head {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #12155c;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.as-of-date {
+  font-size: 12px;
+  color: rgb(188, 188, 188);
+}

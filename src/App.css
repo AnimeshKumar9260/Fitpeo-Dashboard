@@ -1,0 +1,7 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 5fr);
+  border: 8px solid #fbffff;
+  border-radius: 48px;
+  overflow: hidden;
+}
