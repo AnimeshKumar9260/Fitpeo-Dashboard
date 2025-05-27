@@ -10,7 +10,7 @@ export default function Activity() {
         {/* Header */}
         <div className="activity-heading">
           <Heading size="1.1rem">Activity</Heading>
-          <p className="actvity-sub-head">3 appointment this week</p>
+          <p className="actvity-sub-head alt-item">3 appointment this week</p>
         </div>
         {/* Graphs */}
         <div className="graph-container">

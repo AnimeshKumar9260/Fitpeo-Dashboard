@@ -18,6 +18,10 @@
   padding: 0 1.2rem;
   row-gap: 1rem;
   column-gap: 4rem;
+
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .fig-container {
@@ -93,6 +97,10 @@
   &:focus {
     outline: none;
   }
+
+  @media (max-width: 400px) {
+    width: 50%;
+  }
 }
 
 /* ///////////////////////// Activity board ///////////////////////// */
@@ -113,11 +121,26 @@
   color: rgb(188, 188, 188);
 }
 
+.alt-item {
+  @media (max-width: 540px) {
+    display: none;
+  }
+}
+
 .graph-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   justify-items: center;
   padding: 0 1rem;
+
+  @media (max-width: 540px) {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+  }
+
+  @media (max-width: 395px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .days-container {
@@ -126,6 +149,10 @@
   align-items: center;
   justify-items: center;
   padding: 0 1rem;
+
+  @media (max-width: 395px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* ///////////////////////// Stat box ///////////////////////// */

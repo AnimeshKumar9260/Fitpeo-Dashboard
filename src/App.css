@@ -4,4 +4,8 @@
   border: 8px solid #fbffff;
   border-radius: 48px;
   overflow: hidden;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 }
