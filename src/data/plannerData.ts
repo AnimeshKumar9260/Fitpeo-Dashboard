@@ -7,6 +7,14 @@ interface CalItem {
   time3: { active: boolean; value: string };
 }
 
+interface AppointCard {
+  color?: string;
+  title: string;
+  emoji: string;
+  time: string;
+  name?: string;
+}
+
 export const calData: CalItem[] = [
   {
     selected: false,
@@ -63,5 +71,47 @@ export const calData: CalItem[] = [
     time1: { active: true, value: "9:00" },
     time2: { active: false, value: "10:00" },
     time3: { active: false, value: "11:00" },
+  },
+];
+
+export const todayCards: AppointCard[] = [
+  {
+    color: "#3734A9",
+    title: "Dentist",
+    emoji: "🦷",
+    time: "09:00-11:00",
+    name: "Dr. Cameron Williamson",
+  },
+  {
+    title: "Physiotherapy Appoinment",
+    emoji: "💪🏻",
+    time: "11:00-12:00",
+    name: "Dr. Kevin Djones",
+  },
+];
+
+export const thuCards: AppointCard[] = [
+  {
+    title: "Health checkup complete",
+    emoji: "💉",
+    time: "11:00 AM",
+  },
+  {
+    title: "Ophthalmologist",
+    emoji: "👁️",
+    time: "14:00 PM",
+  },
+];
+
+export const satCards: AppointCard[] = [
+  {
+    title: "Cardiologist",
+    emoji: "❤️",
+    time: "12:00 AM",
+  },
+  {
+    title: "Neurologist",
+    emoji: "🧑🏻‍⚕️",
+    time: "16:00 PM",
   },
 ];

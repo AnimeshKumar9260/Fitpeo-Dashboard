@@ -8,6 +8,8 @@ import larr from "../../assets/planner/larr.svg";
 import CalItem from "./CalItem";
 import { calData } from "../../data/plannerData";
 import PlanCard from "./PlanCard";
+import { todayCards, thuCards, satCards } from "../../data/plannerData";
+import { UpcomingContainer } from "./UpcomingContainer";
 
 export default function Planner() {
   return (
@@ -41,9 +43,29 @@ export default function Planner() {
       </div>
       {/* Today cards */}
       <div className="today-grid">
-        <PlanCard />
-        <PlanCard />
+        {todayCards.map((item, index) => (
+          <PlanCard key={index} {...item} />
+        ))}
       </div>
+      {/* Sub heading */}
+      <div className="sub-hed-box">
+        <Heading weight="600" size="1.2rem">
+          The Upcoming Schedule
+        </Heading>
+      </div>
+      {/* Thursday cards */}
+      <UpcomingContainer title="On Thursday">
+        {thuCards.map((item, index) => (
+          <PlanCard key={index} {...item} />
+        ))}
+      </UpcomingContainer>
+      <br /> <br />
+      {/* Saturday cards */}
+      <UpcomingContainer title="On Saturday">
+        {satCards.map((item, index) => (
+          <PlanCard key={index} {...item} />
+        ))}
+      </UpcomingContainer>
     </div>
   );
 }
