@@ -44,8 +44,11 @@
 }
 
 .today-grid {
-  display: grid;
+  display: flex;
   gap: 1rem;
-  grid-template-columns: 2fr 3fr;
   margin: 1.5rem 0;
+}
+
+.sub-hed-box {
+  margin-bottom: 2rem;
 }
