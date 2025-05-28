@@ -18,4 +18,8 @@ export const UpcomingContainer = styled.div<UpComProps>`
     color: rgb(188, 188, 188);
     content: "${(props) => props.title || ""}";
   }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
